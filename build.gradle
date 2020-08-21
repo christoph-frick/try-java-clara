@@ -1,0 +1,20 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.1.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
+}
+
+repositories {
+    mavenLocal()
+    jcenter()
+    maven {
+        url "http://clojars.org/repo"
+    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.clojure:clojure:1.9.0'
+    implementation 'com.cerner:clara-rules:0.20.0'
+}
+
